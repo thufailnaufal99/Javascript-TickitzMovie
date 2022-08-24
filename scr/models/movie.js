@@ -3,6 +3,7 @@ const DB = require("../config/DB");
 const format = require("pg-format");
 const cloudinary = require("../helpers/cloudinary");
 
+//get all movies
 model.getMovie = async (pagination) => {
   try {
     let query = format(`SELECT * FROM public.movie`);
